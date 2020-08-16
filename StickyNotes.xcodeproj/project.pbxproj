@@ -8,13 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		89BC1A2724E7C0E50011EE0F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89BC1A2624E7C0E50011EE0F /* AppDelegate.swift */; };
-		89BC1A2924E7C0E50011EE0F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89BC1A2824E7C0E50011EE0F /* SceneDelegate.swift */; };
 		89BC1A2B24E7C0E50011EE0F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89BC1A2A24E7C0E50011EE0F /* ViewController.swift */; };
 		89BC1A2E24E7C0E50011EE0F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89BC1A2C24E7C0E50011EE0F /* Main.storyboard */; };
 		89BC1A3024E7C10B0011EE0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89BC1A2F24E7C10B0011EE0F /* Assets.xcassets */; };
 		89BC1A3324E7C10B0011EE0F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89BC1A3124E7C10B0011EE0F /* LaunchScreen.storyboard */; };
 		89BC1A3E24E7C10C0011EE0F /* StickyNotesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89BC1A3D24E7C10C0011EE0F /* StickyNotesTests.swift */; };
 		89BC1A4924E7C10C0011EE0F /* StickyNotesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89BC1A4824E7C10C0011EE0F /* StickyNotesUITests.swift */; };
+		89BC1A5724E82B610011EE0F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89BC1A5624E82B610011EE0F /* SceneDelegate.swift */; };
+		89C7FE9524E90691004E3CC3 /* ApplicationConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C7FE9424E90691004E3CC3 /* ApplicationConstants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +38,6 @@
 /* Begin PBXFileReference section */
 		89BC1A2324E7C0E50011EE0F /* StickyNotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StickyNotes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		89BC1A2624E7C0E50011EE0F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		89BC1A2824E7C0E50011EE0F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		89BC1A2A24E7C0E50011EE0F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		89BC1A2D24E7C0E50011EE0F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		89BC1A2F24E7C10B0011EE0F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +49,8 @@
 		89BC1A4424E7C10C0011EE0F /* StickyNotesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StickyNotesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		89BC1A4824E7C10C0011EE0F /* StickyNotesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickyNotesUITests.swift; sourceTree = "<group>"; };
 		89BC1A4A24E7C10C0011EE0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		89BC1A5624E82B610011EE0F /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		89C7FE9424E90691004E3CC3 /* ApplicationConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationConstants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,8 +102,9 @@
 			isa = PBXGroup;
 			children = (
 				89BC1A2624E7C0E50011EE0F /* AppDelegate.swift */,
-				89BC1A2824E7C0E50011EE0F /* SceneDelegate.swift */,
-				89BC1A2A24E7C0E50011EE0F /* ViewController.swift */,
+				89C7FE9724E9221B004E3CC3 /* ViewControllers */,
+				89C7FE9624E921F4004E3CC3 /* Support */,
+				89BC1A5624E82B610011EE0F /* SceneDelegate.swift */,
 				89BC1A2C24E7C0E50011EE0F /* Main.storyboard */,
 				89BC1A2F24E7C10B0011EE0F /* Assets.xcassets */,
 				89BC1A3124E7C10B0011EE0F /* LaunchScreen.storyboard */,
@@ -126,6 +129,22 @@
 				89BC1A4A24E7C10C0011EE0F /* Info.plist */,
 			);
 			path = StickyNotesUITests;
+			sourceTree = "<group>";
+		};
+		89C7FE9624E921F4004E3CC3 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				89C7FE9424E90691004E3CC3 /* ApplicationConstants.swift */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		89C7FE9724E9221B004E3CC3 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				89BC1A2A24E7C0E50011EE0F /* ViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,7 +280,8 @@
 			files = (
 				89BC1A2B24E7C0E50011EE0F /* ViewController.swift in Sources */,
 				89BC1A2724E7C0E50011EE0F /* AppDelegate.swift in Sources */,
-				89BC1A2924E7C0E50011EE0F /* SceneDelegate.swift in Sources */,
+				89C7FE9524E90691004E3CC3 /* ApplicationConstants.swift in Sources */,
+				89BC1A5724E82B610011EE0F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -366,7 +386,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -420,7 +440,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -435,13 +455,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9544AAMRY8;
+				DEVELOPMENT_TEAM = TQQ38WU3AZ;
 				INFOPLIST_FILE = StickyNotes/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = freelancing.StickyNotes;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kuma.Telop;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -453,13 +473,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9544AAMRY8;
+				DEVELOPMENT_TEAM = TQQ38WU3AZ;
 				INFOPLIST_FILE = StickyNotes/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = freelancing.StickyNotes;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kuma.Telop;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
