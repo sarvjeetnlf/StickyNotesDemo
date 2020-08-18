@@ -30,10 +30,11 @@ struct ApplicationConstants {
     
     /// This nested structure will contains all color constants used in the application
     struct ColorConstants {
+        static let APP_BACKGROUND_COLOR_BLACK = UIColor.black
         // Different colors of the stickynotes {These are just random colors and we can add more on the basis of the requirement}
+        static let STICKYNOTES_BACKGROUND_COLOR_GREEN = UIColor(displayP3Red: 0.2, green: 0.7, blue: 0.01, alpha: 1.0)
         static let STICKYNOTES_BACKGROUND_COLOR_RED = UIColor(displayP3Red: 0.92, green: 0.59, blue: 0.58, alpha: 1.0)
-        static let STICKYNOTES_BACKGROUND_COLOR_GREEN = UIColor(displayP3Red: 0, green: 0.55, blue: 0.01, alpha: 0.5)
-        static let STICKYNOTES_BACKGROUND_COLOR_YELLOW = UIColor(displayP3Red: 0.99, green: 0.80, blue: 0.0, alpha: 0.8)
+        static let STICKYNOTES_BACKGROUND_COLOR_YELLOW = UIColor(displayP3Red: 0.99, green: 0.80, blue: 0.0, alpha: 1.0)
     }
     
 }
